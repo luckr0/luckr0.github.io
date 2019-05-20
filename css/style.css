@@ -1,0 +1,284 @@
+
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    margin:0;
+    padding:0;
+}
+
+
+.clear{
+    clear: both;
+}
+.clearfix::after {
+    content: "";
+    clear: both;   
+    display: table;
+  }
+html,body {
+    margin:0;
+    padding:0;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img { 
+    border:0;
+}
+input{
+    border:1px solid #b0b0b0;
+    padding:3px 5px 4px;
+    color:#979797;
+    width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+    font-style:normal;
+    font-weight:normal;
+}
+ol,ul {
+    list-style:none;
+}
+caption,th {
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border:0;
+}
+
+
+/*             _,........__
+            ,-'            "`-.
+          ,'                   `-.
+        ,'                        \
+      ,'                           .
+      .'\               ,"".       `
+     ._.'|             / |  `       \
+     |   |            `-.'  ||       `.
+     |   |            '-._,'||       | \
+     .`.,'             `..,'.'       , |`-.
+     l                       .'`.  _/  |   `.
+     `-.._'-   ,          _ _'   -" \  .     `
+`."""""'-.`-...,---------','         `. `....__.
+.'        `"-..___      __,'\          \  \     \
+\_ .          |   `""""'    `.           . \     \
+  `.          |              `.          |  .     L
+    `.        |`--...________.'.        j   |     |
+      `._    .'      |          `.     .|   ,     |
+         `--,\       .            `7""' |  ,      |
+            ` `      `            /     |  |      |    _,-'"""`-.
+             \ `.     .          /      |  '      |  ,'          `.
+              \  v.__  .        '       .   \    /| /              \
+               \/    `""\"""""""`.       \   \  /.''                |
+                `        .        `._ ___,j.  `/ .-       ,---.     |
+                ,`-.      \         ."     `.  |/        j     `    |
+               /    `.     \       /         \ /         |     /    j
+              |       `-.   7-.._ .          |"          '         /
+              |          `./_    `|          |            .     _,'
+              `.           / `----|          |-............`---'
+                \          \      |          |
+               ,'           )     `.         |
+                7____,,..--'      /          |
+                                  `---.__,--.' */
+
+
+
+
+
+
+
+
+
+
+
+
+Body{
+
+    background: whitesmoke;
+    background-image: url(../img/bgfade2.png);
+    background-repeat: no-repeat;
+background-size:contain;
+}
+Main{
+ height:300vh;
+}
+#test{
+color:red;
+
+}
+header{
+    position: static;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 15vh;
+    /* background:whitesmoke;
+    */
+    z-index: 10;
+    background: whitesmoke;
+    /* box-shadow: 0 2px 10px 0px black; */
+}
+header ul{
+    float: right;
+    line-height: 15vh;
+    margin-right: 5vw;
+
+}
+header ul li{
+    float: left;
+    margin-left: 3vw;
+
+}
+.thumb-cont{
+    
+    max-width: 990px;
+    margin: 170px auto 0;
+
+    background: chocolate;
+
+}
+.thumb-cont a{
+    float:left;
+    display: block;
+    width: calc(960px / 3);
+    height: calc(960px / 3);
+    background: rebeccapurple;
+    margin:0 5px 10px 5px;
+}
+header a{
+
+    color:black;
+    text-emphasis-style: bold;
+    font-family: 'Montserrat', sans-serif;
+   text-decoration-line: none;
+   font-size: 1em;
+    
+}
+.logo{
+    float:left;
+    margin-left: 3vw;
+height: 100%;
+width: 10%;
+background-image:url(../img/logosmall.png);
+background-repeat: no-repeat;
+background-size: contain;
+}
+.intro{
+width: 80%;
+
+height: 75vh;
+margin: 30vh auto;
+
+}
+@media only screen and (max-width:990px){
+
+.thumb-cont{
+    
+    max-width: 660px;
+}
+.intro{background:blue;
+   }
+}
+@media only screen and (max-width:660px){
+    .thumb-cont{max-width: 100%;
+
+    }
+    .thumb-cont a{
+        width:100%;
+        margin: 0 0 10px;
+    }
+}
+.laptop{
+    z-index: 9;
+    position: relative;
+    width:50%;
+    left:25%;
+    top: 12vh;
+    pointer-events: none
+}
+#btn{
+    color:white;
+    width:100%;
+    text-emphasis-style: bold;
+    font-family: 'Montserrat', sans-serif;
+   text-decoration-line: none;
+   font-size: 1.2em;
+display: inline-block;
+transition-duration:0.2s;
+
+   
+    
+}
+.button{
+    text-align: center;
+    line-height: 6vh;
+    width:12vw;
+    height: 6vh;
+    margin: 0 auto;
+background: black;
+    position: relative; 
+border-radius: 10px 10px 10px 10px;
+/* box-shadow: 2px 2px 10px black; */
+transition-duration:0.2s;
+
+ 
+}
+.button:hover {
+    transition-duration:0.2s;
+    box-shadow: 2px 2px 10px black;
+    width:12.1vw;
+    height: 6.2vh;
+    margin: 0 auto;
+
+}
+.button:hover #btn{
+    line-height: 6.2vh;
+    text-align: center;
+    transition-duration:0.2s;
+
+}
+.surf{
+    position: relative;
+    width: 30%;
+    left:35%;
+    top:-100vh;
+    
+}
+/*             _,........__
+            ,-'            "`-.
+          ,'                   `-.
+        ,'                        \
+      ,'                           .
+      .'\               ,"".       `
+     ._.'|             / |  `       \
+     |   |            `-.'  ||       `.
+     |   |            '-._,'||       | \
+     .`.,'             `..,'.'       , |`-.
+     l                       .'`.  _/  |   `.
+     `-.._'-   ,          _ _'   -" \  .     `
+`."""""'-.`-...,---------','         `. `....__.
+.'        `"-..___      __,'\          \  \     \
+\_ .          |   `""""'    `.           . \     \
+  `.          |              `.          |  .     L
+    `.        |`--...________.'.        j   |     |
+      `._    .'      |          `.     .|   ,     |
+         `--,\       .            `7""' |  ,      |
+            ` `      `            /     |  |      |    _,-'"""`-.
+             \ `.     .          /      |  '      |  ,'          `.
+              \  v.__  .        '       .   \    /| /              \
+               \/    `""\"""""""`.       \   \  /.''                |
+                `        .        `._ ___,j.  `/ .-       ,---.     |
+                ,`-.      \         ."     `.  |/        j     `    |
+               /    `.     \       /         \ /         |     /    j
+              |       `-.   7-.._ .          |"          '         /
+              |          `./_    `|          |            .     _,'
+              `.           / `----|          |-............`---'
+                \          \      |          |
+               ,'           )     `.         |
+                7____,,..--'      /          |
+                                  `---.__,--.' */
